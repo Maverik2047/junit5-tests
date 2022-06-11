@@ -5,7 +5,7 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl = "https://www.labirint.ru ";
+        Configuration.baseUrl = "https://www.labirint.ru";
         Configuration.browserSize = "3840x2160";
         Configuration.holdBrowserOpen = true;
     }
