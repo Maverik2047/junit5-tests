@@ -1,5 +1,9 @@
 
 import com.codeborne.selenide.Selenide;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -17,6 +21,16 @@ import static java.util.Arrays.asList;
 
 
 public class ParamsTest extends TestBase {
+
+    @DisplayName("Поиск автора")
+    @Test
+    void authorSearch() {
+        Selenide.open("https://www.labirint.ru/");
+        $("#search-field").setValue("Lovecraft Howard Phillips");
+        $("button[type='submit']").click();
+        $(".body-main-content-wrapper").find(byText("Lovecraft Howard Phillips")).shouldBe(visible);
+    }
+
 
 
     @ValueSource(strings = {"Кинг Стивен", "Poe Edgar Allan"})
@@ -53,7 +67,10 @@ public class ParamsTest extends TestBase {
         $("#search-field").setValue(testData);
         $("button[type='submit']").click();
         $(".body-main-content-wrapper").find(byText(testData)).shouldBe(visible);
-
-
+    }
+    @Disabled
+    @Test
+    void testCheck(){
+        Assertions.assertTrue(10<11);
     }
 }
