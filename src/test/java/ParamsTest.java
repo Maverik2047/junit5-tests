@@ -1,6 +1,5 @@
 
 import com.codeborne.selenide.Selenide;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,21 +21,21 @@ import static java.util.Arrays.asList;
 
 public class ParamsTest extends TestBase {
 
+    @Disabled
     @DisplayName("Поиск автора")
     @Test
     void authorSearch() {
-        Selenide.open("https://www.labirint.ru/");
+        Selenide.open("https://www.labirint.ru");
         $("#search-field").setValue("Lovecraft Howard Phillips");
         $("button[type='submit']").click();
         $(".body-main-content-wrapper").find(byText("Lovecraft Howard Phillips")).shouldBe(visible);
     }
 
 
-
     @ValueSource(strings = {"Кинг Стивен", "Poe Edgar Allan"})
     @ParameterizedTest(name = "При поиске в лабиринте автора {0} в результатах получаем {0}")
     void labirintTest(String testData) {
-        Selenide.open("https://www.labirint.ru/");
+        Selenide.open("https://www.labirint.ru");
         $("#search-field").setValue(testData);
         $("button[type='submit']").click();
         $(".body-main-content-wrapper").find(byText(testData)).shouldBe(visible);
@@ -46,7 +45,7 @@ public class ParamsTest extends TestBase {
     @EnumSource(Books.class)
     @ParameterizedTest
     void booksTest(Books books) {
-        Selenide.open("https://www.labirint.ru/");
+        Selenide.open("https://www.labirint.ru");
         $("#search-field").setValue(books.desc);
         $("button[type='submit']").click();
         $(".body-main-content-wrapper").shouldHave(text(books.desc));
@@ -61,16 +60,13 @@ public class ParamsTest extends TestBase {
     }
 
     @MethodSource(value = "authorData")
-    @ParameterizedTest(name = "При поиске в лабиринте автора {0} в результатах получаем {0}")
+    @ParameterizedTest(name = "При поиске книг автора {0} в результатах получаем {0}")
     void authorSearch(String testData, List<String> expectedResult) {
-        Selenide.open("https://www.labirint.ru/");
+        Selenide.open("https://www.labirint.ru");
         $("#search-field").setValue(testData);
         $("button[type='submit']").click();
         $(".body-main-content-wrapper").find(byText(testData)).shouldBe(visible);
     }
-    @Disabled
-    @Test
-    void testCheck(){
-        Assertions.assertFalse(9<11);
-    }
+
+
 }
