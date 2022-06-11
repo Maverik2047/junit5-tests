@@ -1,5 +1,5 @@
 NAME : Поиск автора по запросу
-
+TEST DATA : ["Кинг Стивен", "Poe Edgar Allan"]
 PRIORITY : CRITICAL
 
 PRECONDITIONS :
