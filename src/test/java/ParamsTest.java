@@ -32,7 +32,7 @@ public class ParamsTest extends TestBase {
     }
 
 
-    @ValueSource(strings = {"Кинг Стивен", "Poe Edgar Allan"})
+    @ValueSource(strings = {"Кинг Стивен", "Poe Edgar Allan","Lovecraft Howard Phillips"})
     @ParameterizedTest(name = "При поиске в лабиринте автора {0} в результатах получаем {0}")
     void labirintTest(String testData) {
         Selenide.open("https://www.labirint.ru");
