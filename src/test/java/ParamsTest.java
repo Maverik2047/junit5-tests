@@ -20,7 +20,7 @@ public class ParamsTest extends TestBase {
 
 
     @ValueSource(strings = {"Кинг Стивен", "Poe Edgar Allan"})
-    @ParameterizedTest(name = "При поиске в лабиринте автора {0} в результатах получаем {0}")
+    @ParameterizedTest(name = "При  поиске в лабиринте автора {0} в результатах получаем {0}")
     void labirintTest(String testData) {
         Selenide.open("https://www.labirint.ru/");
         $("#search-field").setValue(testData);
