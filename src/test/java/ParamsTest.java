@@ -71,6 +71,6 @@ public class ParamsTest extends TestBase {
     @Disabled
     @Test
     void testCheck(){
-        Assertions.assertTrue(10<11);
+        Assertions.assertTrue(9<11);
     }
 }
