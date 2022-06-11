@@ -1,6 +1,6 @@
 public enum Books {
 
-    DELIVERY("Доставка"),
+    DELIVERY("Доставка "),
     SENSEI("Сенсей");
     public final String desc;
 
