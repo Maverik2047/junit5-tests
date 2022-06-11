@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ParamsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-06-11T10:47:29" hostname="LAPTOP-JMMD302D" time="69.089">
+  <properties/>
+  <testcase name="При поиске в лабиринте автора Кинг Стивен в результатах получаем Кинг Стивен" classname="ParamsTest" time="19.087"/>
+  <testcase name="При поиске в лабиринте автора Poe Edgar Allan в результатах получаем Poe Edgar Allan" classname="ParamsTest" time="12.764"/>
+  <testcase name="При поиске в лабиринте автора Кинг Стивен в результатах получаем Кинг Стивен" classname="ParamsTest" time="8.7"/>
+  <testcase name="При поиске в лабиринте автора Poe Edgar Allan в результатах получаем Poe Edgar Allan" classname="ParamsTest" time="7.899"/>
+  <testcase name="[1] DELIVERY" classname="ParamsTest" time="11.73"/>
+  <testcase name="[2] SENSEI" classname="ParamsTest" time="8.892"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 13 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\maver\qa_guru_hw_junit\build\downloads\1654944449536_17132_13
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\maver\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52545
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+июн. 11, 2022 1:47:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+июн. 11, 2022 1:47:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
+июн. 11, 2022 1:47:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 102 of 101
+[Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 3840x2160
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=102.0.5005.115 Platform=WINDOWS
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.5.1
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.1.4 build revision: 535d840ee2
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 13: ChromeDriver -> ChromeDriver: chrome on WINDOWS (7c646127038bc71bba9419c4c9abce06)
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Browser and proxy will stay open due to holdBrowserOpen=true: 13 -> ChromeDriver: chrome on WINDOWS (7c646127038bc71bba9419c4c9abce06), null
+]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+NAME : Поиск автора по запросу
+
+PRIORITY : CRITICAL
+
+PRECONDITIONS :
+-Открыт браузер
+-Находимся на страртовой странице labirint.ru
+
+STEPS :
+-Ввести имя автора Stephen King
+-Нажать кнопку "Найти"
+
+EXPECTED RESULT :
+-Отображаются результаты поиска
